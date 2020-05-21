@@ -5,7 +5,7 @@ library(dplyr)
 
 
 getwd()
-PATH = "data/heart.csv"
+PATH = "heart.csv"
 df = read.csv(PATH,header=TRUE)
 
 class(df)
@@ -21,9 +21,6 @@ summary(df)
 
 
 # Chaging Data value
-# df$age <- df$age1 #if chging the col name
-# df$sex[df$sex == 0] = "Female"
-# df$sex[df$sex == 1] = "Male"
 
 hist(df$sex)
 df$sex <-recode(df$sex, "0" ="Female","1" ="Male")
