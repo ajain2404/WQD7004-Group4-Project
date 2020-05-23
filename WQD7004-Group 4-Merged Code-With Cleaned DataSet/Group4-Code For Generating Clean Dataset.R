@@ -21,7 +21,7 @@ library(data.table)
 setwd('C:/Users/Saira/Desktop/Project-Dataset')
 dev.off()
 getwd()
-PATH = "Unclean_Data-heart.csv"
+PATH = "Raw_Data-heart.csv"
 df = read.csv(PATH,header=TRUE)
 
 class(df)
